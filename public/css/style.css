@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+:focus {
+  outline: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.background {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid #007aff;
+}
+.bubble {
+  min-height: 1em;
+  min-width: 60px;
+  max-width: 120px;
+  word-break: break-all;
+  display: inline-block;
+  font-family: sans-serif;
+  border-radius: calc(1em);
+  padding: 6px 12px;
+  position: absolute;
+}
+.bubble-message {
+  color: white;
+  background: #007AFF;
+  box-shadow: 0 0 2px gray;
+  transition-property: background-color, color, transform;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+}
+.bubble-message:hover {
+  z-index: 1000;
+}
+.bubble-placeholder {
+  color: black;
+  background: white;
+  box-shadow: 0 0 2px gray;
+}
+::selection {
+  background: #0080ff;
+}
+.bubble-gray {
+  color: black;
+}
+.bubble-blue,
+.bubble-red {
+  color: white;
+}
+.bubble-gray-0 {
+  background-color: #e5e5ea;
+}
+.bubble-blue-1 {
+  background-color: #33bbff;
+}
+.bubble-blue-2 {
+  background-color: #2db4ff;
+}
+.bubble-blue-3 {
+  background-color: #28aeff;
+}
+.bubble-blue-4 {
+  background-color: #22a7ff;
+}
+.bubble-blue-5 {
+  background-color: #1ca1ff;
+}
+.bubble-blue-6 {
+  background-color: #179aff;
+}
+.bubble-blue-7 {
+  background-color: #1194ff;
+}
+.bubble-blue-8 {
+  background-color: #0b8dff;
+}
+.bubble-blue-9 {
+  background-color: #0687ff;
+}
+.bubble-blue-10 {
+  background-color: #0080ff;
+}
+.bubble-red-1 {
+  background-color: #ff9159;
+}
+.bubble-red-2 {
+  background-color: #ff8755;
+}
+.bubble-red-3 {
+  background-color: #ff7c51;
+}
+.bubble-red-4 {
+  background-color: #ff724c;
+}
+.bubble-red-5 {
+  background-color: #ff6748;
+}
+.bubble-red-6 {
+  background-color: #ff5d44;
+}
+.bubble-red-7 {
+  background-color: #ff5240;
+}
+.bubble-red-8 {
+  background-color: #ff483b;
+}
+.bubble-red-9 {
+  background-color: #ff3d37;
+}
+.bubble-red-10 {
+  background-color: #ff3333;
+}

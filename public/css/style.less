@@ -1,0 +1,68 @@
+// FUNCTIONS
+.generate-gradual-bubbles(@colorName, @fromColor, @toColor, @index: 1) when (@index =< 10) {
+  .bubble-@{colorName}-@{index} {
+    background-color: mix(@toColor, @fromColor, ((@index - 1) * 11.11%));
+  }
+  
+  .generate-gradual-bubbles(@colorName, @fromColor, @toColor, @index + 1);
+}
+
+* {
+	box-sizing: border-box;
+}
+:focus {
+	outline: none;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+.background {
+	width: 100%;
+	height: 100vh;
+	border: 1px solid #007aff;
+}
+.bubble {
+	min-height: 1em;
+	min-width: 60px;
+	max-width: 120px;
+	word-break: break-all;
+	display: inline-block;
+	font-family: sans-serif;
+	border-radius: calc(1em);
+	padding: 6px 12px;
+	position: absolute;
+}
+.bubble-message {
+	color: white;
+	background: #007AFF;
+	box-shadow: 0 0 2px gray;
+	
+	transition-property: background-color, color, transform;
+	transition-duration: 0.25s;  
+	transition-timing-function: ease;
+}
+.bubble-message:hover {
+	z-index: 1000;
+}
+.bubble-placeholder {
+	color: black;
+	background: white;
+	box-shadow: 0 0 2px gray;
+}
+::selection {
+	background: #0080ff;
+}
+
+.bubble-gray {
+	color: black;
+}
+.bubble-blue,
+.bubble-red {
+	color: white;
+}
+.bubble-gray-0 {
+	background-color: #e5e5ea;
+}
+.generate-gradual-bubbles(blue, #33bbff, #0080ff);
+.generate-gradual-bubbles(red, #ff9159, #ff3333);

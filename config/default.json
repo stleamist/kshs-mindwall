@@ -1,0 +1,9 @@
+{
+  "mongodb": {
+    "url": "mongodb://10.0.1.100:27017/kwangshinhs-mindwall"
+  },
+  "google-cloud": {
+	  "projectId": "kwangshinhs-festival-2017",
+	  "keyFilename": "./google-cloud/gcp-key.json"
+  }
+}
