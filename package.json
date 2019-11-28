@@ -16,7 +16,7 @@
     "express": "~4.15.2",
     "hangul-js": "^0.2.4",
     "less-middleware": "~2.2.0",
-    "mongoose": "^4.11.8",
+    "mongoose": "^5.7.5",
     "morgan": "~1.8.1",
     "serve-favicon": "~2.4.2"
   }
