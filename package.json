@@ -11,7 +11,7 @@
     "color-convert": "^1.9.0",
     "config": "^1.26.2",
     "cookie-parser": "~1.4.3",
-    "debug": "~2.6.3",
+    "debug": "~2.6.9",
     "ejs": "~2.5.6",
     "express": "~4.15.2",
     "hangul-js": "^0.2.4",
